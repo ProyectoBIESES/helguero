@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="esquemaHelguero.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Autógrafos de Palacio. Edición digital.</title>
+                <title type="short">Autógrafos</title>
+                <author ref="http://viaf.org/viaf/284161272038347440236" key="NHELG">
+                    <surname>Helguero y Alvarado</surname>
+                    <forename>María Nicolasa</forename>
+                    <date from="1719" to="1805">1719-1805</date>
+                </author>
+                <respStmt>
+                    <persName>
+                        <surname>Serrano y Sanz</surname>
+                        <forename>Manuel</forename>
+                    </persName>
+                    <resp>transcriptor</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    Primera versión - <date when="2021-06-11">11 de junio de 2021</date>
+                </edition>
+                <respStmt>
+                    <persName>
+                        <surname>Cano García</surname>
+                        <forename>Iñaki</forename>
+                    </persName>
+                    <resp>editor</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>
+                        <surname>Martos Pérez</surname>
+                        <forename>María Dolores</forename>
+                    </persName>
+                    <resp>supervisora</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://www.uned.es">Universidad Nacional de Educación a Distancia (UNED)</orgName>
+                </publisher>
+                <pubPlace>Madrid - Berlín</pubPlace>
+                <date when="2021-06-11">Fecha de codificación: 11 de junio de 2021</date>
+                <idno type="DOI"></idno><!--Añadir DOI-->
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        Released under a Creative Commons BY-NC-SA License</licence>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note></note><!--Todavía no introduzco nada: dependerá de la naturaleza de la anotación-->
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    Transcripción realizada sobre el ejemplar 
+                    <ptr target="http://bdh.bne.es/bnesearch/detalle/bdh0000255876"/>
+                </bibl>
+                <bibl>Madrid, Biblioteca Nacional de España — Signatura: 5/13438 V. 1</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Apuntes para una biblioteca de escritoras españolas desde el año 1401 al 1833</title>
+                        <author>
+                            <surname>Serrano y Sanz</surname>
+                            <forename>Manuel</forename>
+                        </author>
+                    </titleStmt>
+                    <extent>2 v. (XII, 695; 714 p.); 27 cm </extent>
+                    <publicationStmt>
+                        <publisher> Sucesores de
+                            <surname>Rivadeneyra</surname>
+                        </publisher>
+                        <pubPlace>Madrid</pubPlace>
+                        <date when="1903">1903</date>
+                    </publicationStmt>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Esta edición y las asociadas a ella integran <ref target="https://icanogar.gitlab.io/nicolasa/">una publicación 
+                digital en GitLab</ref> que recoge la producción literaria de Nicolasa de Helguero
+                y Alvarado, además de referencia sobre la autora y su contexto de producción y otros recursos.</p>
+                <!--cambiar la URL si se crea una cuenta para BIESES-->
+            </projectDesc>
+            <samplingDecl>
+                <p>Únicamente se codifican, y en este orden, las entradas 1121, 1119 y 1120 (págs. 497-9), que corresponden a 
+                los autógrafos de Nicolasa de Helguero conservados en la Real Biblioteca de Palacio.</p>
+            </samplingDecl>
+            <editorialDecl>
+                <normalization>
+                    <p>La codificación refleja las variantes ortográficas originales y su regularización, de acuerdo a 
+                    los criterios explicitados en <ref target="https://icanogar.gitlab.io/nicolasa/criterios"/> 
+                    y a los criterios editoriales generales del Proyecto Bieses 
+                    <ptr target="https://www.bieses.net/wp-content/uploads/2014/12/criterios_edici%c3%b3n.pdf"/>. 
+                    Se mantienen las mayúsculas originales del texto, así como los usos sintácticos (leísmo, laísmo) que pueden corresponder tanto al estado 
+                    de lengua como a las preferencias de la autora o los impresores.</p>
+                </normalization>
+                <correction>
+                    <p></p>
+                </correction>
+                <punctuation>
+                    <p>No se codifican las intervenciones en la puntuación.</p>
+                </punctuation>
+                <hyphenation>
+                    <p>Se recomponen las palabras cortadas por guion en la línea o verso precedente.</p>
+                </hyphenation>
+            </editorialDecl>
+            <tagsDecl></tagsDecl><!-- por siaca-->
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term></term><!--Cuáles son la materias de la BBDD BIeses? Enlazo a WorldCat o VREF también?-->
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text xml:lang="es">
+        <body>
+                        <pb n="497"/>
+                        <cb n="2"/>
+            <div n="01" xml:id="AUT01">
+                <head type="titulo_poema" subtype="menor">
+                    1121.— Octavas que 
+                    <choice><orig>á</orig><reg>a</reg></choice> perpetua memoria <lb/>
+                    de la gloriosa muerte del <persName type="cont" key="PHELG">
+                    <choice><orig>Capitan</orig><reg>Capitán</reg></choice> de fragata <lb/>
+                    Don Pedro de Helguero</persName>, batiéndose con <lb/>
+                    los <persName type="cont" key="">argelinos</persName>, consagra su hermana <persName type="cont" key="NHELG">Doña <lb/>
+                    Nicolasa de Helguero</persName>, Marquesa que 
+                    <choice><orig>fué</orig><reg>fue</reg></choice> de <lb/>
+                    San Isidro, y hoy monja del <placeName>Real monasterio <lb/>
+                    de las Huelgas de <placeName>Burgos</placeName></placeName>.
+                </head>
+                <div type="octavas">
+                    <lg n="1" type="octava">
+                        <l n="1">Desgajado el ciprés, rota la lira,</l>
+                        <l n="2">Mal concertado el susto con el canto,</l>
+                        <l n="3">Empiece el triste <choice><orig>númen</orig><reg>numen</reg></choice> que me inspira</l>
+                        <l n="4">A dar tímida voz envuelta en llanto;</l>
+                        <l n="5">Que mal entre congojas se respira,</l>
+                        <l n="6">Que poco explica quien padece tanto;</l>
+                        <l n="7">Pero si he de cantar, sea el tormento</l>
+                        <l n="8">El que sirva esta vez por instrumento.</l>
+                    </lg>
+                    <lg n="2" type="octava">
+                        <l n="9">Amaba yo <choice><orig>á</orig><reg>a</reg></choice> 
+                            <persName type="cont" key="PHELG">Petronio</persName> generoso</l>
+                        <l n="10">Ufana de que fuese hermano <choice><orig>mio</orig><reg>mío</reg></choice>,</l>
+                        <l n="11">Miraba que <choice><orig>á</orig><reg>a</reg></choice> su genio belicoso</l>
+                        <l n="12">Las <persName type="mit" key="GRA">Gracias</persName> asistían sin desvío,</l>
+                        <l n="13">No desdeñando al joven animoso</l>
+                        <l n="14">Docta, canora, sonorosa <persName type="mit" key="CLIO">Clío</persName>;</l>
+                        <l n="15"><persName type="mit" key="GRA">Gracias</persName> y 
+                            <persName type="mit" key="MUS">Musas</persName> se unen 
+                            <choice><orig>á</orig><reg>a</reg></choice> elevarle</l>
+                                <pb n="498"/>
+                                <fw type="pag">– 498 –</fw>
+                                <cb n="1"/>
+                        <l n="16">Y las <persName type="mit" key="FUR">Furias</persName> y <persName type="mit" key="PARC">Parca</persName> 
+                            <choice><orig>á</orig><reg>a</reg></choice> derribarle <ref xml:id="p498c1r1" target="#p498c1n1">(1)</ref>.</l>
+                    </lg>
+                    <lg n="3" type="octava">
+                        <l n="17">Heredó de <placeName>Cantabria</placeName> el ardimiento,</l>
+                        <l n="18">Imitó del gran 
+                            <persName type="hist" key="NOJA">Noja</persName> <ref xml:id="p498c1r2" target="#p498c1n2">(2)</ref> las acciones,</l>
+                        <l n="19">Advertido ilustró su entendimiento</l>
+                        <l n="20">Tomando de <persName type="mit" key="MIN">Minerva</persName> las lecciones;</l>
+                        <l n="21">Supo dar <choice><orig>á</orig><reg>a</reg></choice> su empleo cumplimiento,</l>
+                        <l n="22">Supo también robar las aficiones</l>
+                        <l n="23">Cuando en el regio <placeName>Nápoles</placeName> florido</l>
+                        <l n="24">Brilló gallardo y se explicó entendido <ref xml:id="p498c1r3" target="#p498c1n3">(3)</ref>.</l>
+                    </lg>
+                    <lg n="4" type="octava">
+                        <l n="25">Del <geogName>Betis</geogName> caudaloso en la ribera</l>
+                        <l n="26">Festivo divirtió los cortos años <ref xml:id="p498c1r4" target="#p498c1n4">(4)</ref>,</l>
+                        <l n="27">Logrando en la fortuna lisonjera</l>
+                        <l n="28">Los aplausos de propios y de extraños;</l>
+                        <l n="29">Corrió veloz, y al fin de la carrera</l>
+                        <l n="30">Enseñó <choice><orig>á</orig><reg>a</reg></choice> los mortales desengaños,</l>
+                        <l n="31">Dejando entre cenizas sepultado</l>
+                        <l n="32">El valor adquirido y heredado.</l>
+                    </lg>
+                    <lg n="5" type="octava">
+                        <l n="33">Cuando el <persName type="cont" key="RUBIO">sabio Pastor americano</persName></l>
+                        <l n="34"><choice><sic>Sulcaba</sic><corr>Surcaba</corr></choice> el golfo por gozar su esposa,</l>
+                        <l n="35">El furor atrevido de <persName type="mit" key="VULC">Vulcano</persName></l>
+                        <l n="36">Arrojó al vaso llama pavorosa <ref xml:id="p498c1r5" target="#p498c1n5">(5)</ref>;</l>
+                        <l n="37">Diestro <persName type="cont" key="PHELG">Petronio</persName>, con activa mano</l>
+                        <l n="38">Cortó el incendio y <choice><orig>dió</orig><reg>dio</reg></choice> quietud dichosa</l>
+                        <l n="39">A los que ya entre sustos desmayaban</l>
+                        <l n="40">En vista de la muerte que esperaban.</l>
+                    </lg>
+                    <lg n="6" type="octava">
+                        <l n="41">No <choice><sic>exprimentó</sic><reg>exprimentó</reg></choice> en 
+                            <placeName><choice><orig>Tolon</orig><reg>Tolón</reg></choice></placeName> el triste estrago</l>
+                            <!--qué hago con esto? seguro que es mano de Serrano y Sanz-->
+                        <l n="42">Cuando en nave fatal <choice><orig>dió</orig><reg>dio</reg></choice> providencia</l>
+                        <l n="43">De un sitio <choice><orig>á</orig><reg>a</reg></choice> otro discurriendo vago,</l>
+                        <l n="44">Armado de valor y de prudencia <ref xml:id="p498c1r6" target="#p498c1n6">(6)</ref>.</l>
+                        <l n="45">El mismo fuego le sirvió de halago;</l>
+                        <l n="46">No naufragó, que la alta Providencia</l>
+                                <cb n="2"/>
+                        <l n="47">A <choice><orig>mas</orig><reg>más</reg></choice> glorioso fin le reservaba</l>
+                        <l n="48">En morir por la fe que profesaba.</l>
+                    </lg>
+                    <lg n="7" type="octava">
+                        <l n="49">Del mar funesto el agua procelosa</l>
+                        <l n="50">Anegaba sangrienta el roto pino,</l>
+                        <l n="51">Riesgos <choice><sic>sulca</sic><corr>surca</corr></choice> la gente lastimosa</l>
+                        <l n="52">Sin rumbo, sin aliento, sin destino;</l>
+                        <l n="53">Mas avistando (bien que temerosa)</l>
+                        <l n="54">A la excelsa colonia de <placeName>Barquino</placeName>,</l>
+                        <l n="55">En su noble piedad hallaron puerto,</l>
+                        <l n="56"><persName type="cont" key="PHELG">Petronio</persName> triste y 
+                            <persName type="cont" key="LOLIV">Olivares</persName> muerto <ref xml:id="p498c2r1" target="#p498c2n1">(1)</ref>.</l>
+                    </lg>
+                    <lg n="8" type="octava">
+                    <l n="57">Cercábame el dolor un triste  
+                        <choice><orig>dia</orig><reg>día</reg></choice></l>
+                    <l n="58">En que 
+                        <choice><orig>mas</orig><reg>más</reg></choice> su peligro imaginaba,</l>
+                    <l n="59">A su seguridad le  
+                        <choice><orig>persuadia</orig><reg>persuadía</reg></choice></l>
+                    <l n="60">Mi voz, que en los afectos se animaba;</l>
+                    <l n="61">Desatendió la justa pena  
+                        <choice><orig>mia</orig><reg>mía</reg></choice></l>
+                    <l n="62">Porque de los temores se burlaba,</l>
+                    <l n="63">Y en la causa infeliz de mis enojos</l>
+                    <l n="64">Líquido el 
+                        <choice><orig>corazon</orig><reg>corazón</reg></choice> corrió 
+                        <choice><orig>á</orig><reg>a</reg></choice> los ojos <ref xml:id="p498c2r1" target="#p498c2n1">(2)</ref>.</l>
+                    </lg>
+                    <lg n="9" type="octava">
+                        <l n="65">Volvió <persName type="cont" key="PHELG">Petronio</persName> al mar y bramó el viento,</l>
+                        <l n="66">Enmudecen tritones y sirenas,</l>
+                        <l n="67">Ronco sonó el bélico instrumento,</l>
+                        <l n="68">Infausto anuncio de futuras penas;</l>
+                        <l n="69">Solo <persName type="cont" key="PHELG">Petronio</persName>, instado de su aliento</l>
+                        <l n="70">Pisó ardiente las húmedas arenas</l>
+                        <l n="71">Por acercarse al término preciso</l>
+                        <l n="72">De que el mismo nacer le dio el aviso.</l>
+                    </lg>
+                    <lg n="10" type="octava">
+                        <l n="73">¿<choice><orig>Adonde</orig><reg>Adónde</reg></choice> vas, 
+                            <persName type="cont" key="PHELG">Petronio</persName> valeroso?</l>
+                        <l n="74">Huye del golfo, que <persName type="mit" key="NEP">Neptuno</persName> airado</l>
+                        <l n="75">Oculta en su dominio proceloso</l>
+                        <l n="76">Agareno furor de fuego armado <ref xml:id="p498c2r3" target="#p498c2n1">(3)</ref>;</l>
+                        <l n="77">Pero en vano es el ruego cariñoso</l>
+                        <l n="78">Que el <choice><orig>corazon</orig><reg>corazón</reg></choice> te  
+                            <choice><orig>envia</orig><reg>envía</reg></choice> lastimado;</l>
+                        <l n="79">Magnánimo, constante, fiel y fuerte,</l>
+                        <l n="80">Mi voz no escuchas por buscar tu muerte.</l>
+                    </lg>
+                    <lg n="11" type="octava">
+                        <l n="81">Descúbrense las naves enemigas;</l>
+                        <l n="82">Da la española al viento la bandera.</l>
+                        <l n="83">Corta veloz las olas cristalinas,</l>
+                        <l n="84">Apresa <choice><orig>á</orig><reg>a</reg></choice> la otomana 
+                            <choice><orig>mas</orig><reg>más</reg></choice> velera;</l>
+                        <l n="85"><persName type="cont" key="PHELG">Petronio</persName>, con hazañas peregrinas</l>
+                        <l n="86">Mayor victoria conseguir espera;</l>
+                        <l n="87">A seguir <choice><orig>á</orig><reg>a</reg></choice> la que huye se previene,</l>
+                        <l n="88">Cuando su misma muerte le detiene <ref xml:id="p498c2r4" target="#p498c2n4">(4)</ref>.</l>
+                    </lg>
+                                <pb n="499"/>
+                                <fw type="page">– 499 –</fw>
+                                <cb n="1"/>
+                    <lg n="12" type="octava">
+                        <l n="89">Bárbara mano, ¿cómo así atrevida,</l>
+                        <l n="90">Con el fuego y el plomo has conspirado</l>
+                        <l n="91">Contra el <persName type="cont" key="PHELG">cántabro bello</persName>, cuya vida</l>
+                        <l n="92">En su perfecta edad has marchitado?</l>
+                        <l n="93">De su valor el <placeName><choice><orig>Africa</orig><reg>África</reg></choice></placeName> ofendida</l>
+                        <l n="94">Envidiosa, tirana se ha mostrado,</l>
+                        <l n="95">Y el infiel <persName type="cont" key="x">Ismael</persName> el tiro ha hecho</l>
+                        <l n="96">En el rosado blanco de su pecho.</l>
+                    </lg>
+                    <lg n="13" type="octava">
+                        <l n="97">Admirable, divina providencia,</l>
+                        <l n="98">Independiente en tus operaciones,</l>
+                        <l n="99">¿Cómo al inmenso abismo de tu ciencia</l>
+                        <l n="100">Podrán sondear humanas comprehensiones?</l>
+                        <l n="101">Yo imagino, <persName type="bibl" key="DIOS">Señor</persName>, que 
+                            <choice><orig>fué</orig><reg>fue</reg></choice> clemencia</l>
+                        <l n="102">Al alma libertar de sus prisiones;</l>
+                        <l n="103">Tu juicio adoro, y <choice><orig>victima</orig><reg>víctima</reg></choice> te ofrezco</l>
+                        <l n="104">Con el dolor intenso que padezco.</l>
+                    </lg>
+                    <lg n="14" type="octava">
+                        <l n="105">Murió <persName type="cont" key="PHELG">Petronio</persName>, y el ingrato olvido</l>
+                        <l n="106"><choice><orig>Tambien</orig><reg>También</reg></choice> cruel su nombre ha sepultado;</l>
+                        <l n="107">No hubo laurel, que desdeñoso ha huido</l>
+                        <l n="108">De un mérito, aunque <choice><orig>heróico</orig><reg>heroico</reg></choice>, desgraciado;</l>
+                        <l n="109">Solo la bella tropa en quien ha sido</l>
+                        <l n="110">Por sus amables prendas estimado,</l>
+                        <l n="111">De su heroicidad imprime historia</l>
+                        <l n="112">En el terso papel de la memoria <ref xml:id="p499c1r1" target="#p499c1n1">(1)</ref>.</l>
+                    </lg>
+                </div>
+                <note xml:id="p498c1n1">
+                    <p>
+                        <ref target="#p498c1r1">(1)</ref> <choice><orig>Fué</orig><reg>Fue</reg></choice> buen poeta; 
+                        dejó varias composiciones, estimadas <lb/>de los que las leen. 
+                        <hi rend="cursiva">(Nota marginal, como todas las <lb/>que siguen.)</hi>
+                    </p>
+                </note>
+                <note xml:id="p498c1n2">
+                    <p>
+                        <ref target="#p498c1r2">(2)</ref> <persName type="hist" key="NOJA">Don 
+                        Juan de Noja Castillo</persName>, bisabuelo suyo, 
+                        <choice><orig>fué</orig><reg>fue</reg></choice> <lb/>
+                        General Almirante de todo el <choice><sic>Occéano</sic><corr>Océano</corr></choice>, 
+                        de acreditado valor <lb/>y conducta.
+                    </p>
+                </note>
+                <note xml:id="p498c1n3">
+                    <p>
+                        <ref target="#p498c1r3">(3)</ref> Le envió a <placeName>Sicilia</placeName> 
+                        el <persName type="hist" key="F6">Señor Fernando el VI </persName>
+                        <choice><orig>á</orig><reg>a</reg></choice> comisiones de su Real servicio, y se presentó en 
+                        <placeName>Nápoles</placeName> 
+                        al <persName type="hist" key="C3">Rey Don Carlos, hoy III de 
+                        <placeName>España</placeName></persName>, quien le distinguió mucho.
+                    </p>
+                </note>
+                <note xml:id="p498c1n4">
+                    <p>
+                        <ref target="#p498c1r4">(4)</ref> Pasó en <placeName>Sevilla</placeName> los años de su pubertad.
+                    </p>
+                </note>
+                <note xml:id="p498c1n5">
+                    <p>
+                        <ref target="#p498c1r5">(5)</ref> El <persName type="cont" key="RUBIO">
+                        <choice><abbr>Sr.</abbr><expan>señor</expan></choice> 
+                        Rubio, arzobispo de <placeName>México</placeName></persName>. Prendió el <lb/>
+                        fuego en los barriles del aguardiente, dentro del navío <lb/>
+                        que llevaba <choice><orig>á</orig><reg>a</reg></choice> su silla a 
+                        <persName type="cont" key="RUBIO">este ilustrísimo</persName>, y avisado 
+                        <persName type="cont" key="PHELG">don Pedro <lb/>
+                        de Helguero</persName> por la <choice><orig>tripulacion</orig><reg>tripulación</reg></choice> 
+                        del peligro inminente, <lb/>
+                        ocurrió él solo <choice><orig>á</orig><reg>a</reg></choice> 
+                        evitarle; que estaba ya atajado y extinguido <lb/>
+                        el fuego antes que <persName type="cont" key="RUBIO">Su 
+                        <choice><orig>Señoria</orig><reg>Señoría</reg></choice></persName> y la oficialidad <lb/>
+                        de la nave supiese que le <choice><orig>habia</orig><reg>había</reg></choice> habido.
+                    </p>
+                </note>
+                <note xml:id="p498c1n6">
+                    <p>
+                        <ref target="#p498c1r6">(6)</ref> En la batalla de 
+                        <placeName><choice><orig>Tolon</orig><reg>Tolón</reg></choice></placeName> 
+                        <choice><orig>repartia</orig><reg>repartía</reg></choice> las órdenes de 
+                        <persName type="cont" key="EOLIV">su <lb/>primo Don Enrique de Olivares</persName>, 
+                        <choice><orig>capitan</orig><reg>capitán</reg></choice> del navío el <lb/>
+                        <hi rend="cursiva">Neptuno</hi>, que <choice><orig>fué</orig><reg>fue</reg></choice> el 
+                        primero que entró en la refriega y el <lb/>
+                        que más sufrió y quedó más maltratado.
+                    </p>
+                </note>
+                <note xml:id="p498c2n1">
+                    <p>
+                        <ref target="#p498c2r1">(1)</ref> <persName type="cont" key="LOLIV">Don 
+                        Luis de Olivares</persName> murió <choice><orig>á</orig><reg>a</reg></choice> 
+                        pocas horas <choice><orig>despues</orig><reg>después</reg></choice> <lb/>
+                        de aquella gloriosa <choice><orig>funcion</orig><reg>función</reg></choice>, y 
+                        <choice><orig>fué</orig><reg>fue</reg></choice> enterrado en el 
+                        <placeName>convento <lb/>de San <choice><orig>Agustin</orig><reg>Agustín</reg></choice> 
+                        de <placeName>Barcelona</placeName></placeName>.
+                        <!--No marco San Agustín como <persName>-->
+                    </p>
+                </note>
+                <note xml:id="p498c2n2">
+                    <p>
+                        <ref target="#p498c2r2">(2)</ref> En 
+                        <choice><orig>conversacion</orig><reg>conversación</reg></choice> en 
+                        <placeName>las Huelgas</placeName> que tuvo su <persName type="cont" key="NHELG">hermana, <lb/>
+                        la autora de estos versos</persName>, antes de volver 
+                        <choice><orig>á</orig><reg>a</reg></choice> corso.
+                    </p>
+                </note>
+                 <note xml:id="p498c2n3">
+                    <p>
+                        <ref target="#p498c2r3">(3)</ref> Era <persName type="cont" key="ARCH">Archimira</persName> 
+                        el pirata que gobernó esta <choice><orig>accion</orig><reg>acción</reg></choice>.
+                    </p>
+                </note>
+                <note xml:id="p498c2n4">
+                    <p>
+                        <ref target="#p498c2r4">(4)</ref> Tomó el empeño de seguir en el jabeque de su comando <lb/>
+                        al último navio de los <persName type="cont" key="">argelinos</persName>, que 
+                        <choice><orig>despues</orig><reg>después</reg></choice> de <lb/>
+                        apresados los demás se puso en fuga; y sin <choice><sic>embarazeras</sic><corr>embaraceras</corr></choice> <lb/>
+                        en verse herido, instó en hacerles fuego por sí mismo, <lb/>
+                        hasta que una bala de fusil le segundó el golpe mortal; <lb/>
+                        pero ya en términos que antes de su muerte 
+                        <choice><orig>fué</orig><reg>fue</reg></choice> apresada <lb/> la nave fugitiva.
+                    </p>
+                </note>
+                <note xml:id="p499c1n1">
+                <p>
+                    <ref target="#p499c1r1">(1)</ref> Manuscrito autógrafo.–Tres hojas en <choice><abbr>4.°</abbr><expan>cuarto</expan></choice>
+                </p>
+                <p>
+                    <placeName>Biblioteca del Real Palacio</placeName>, S. 2.ª, est. I, P. 5
+                </p>
+            </note>
+            </div>
+            <div n="02" xml:id="AUT02">
+                <head type="titulo_poema" subtype="menor">
+                    1119.- En elogio de <persName type="cont" key="DORU">
+                    <choice><abbr>D.</abbr><expan>don</expan></choice> Diego de Oruña <lb/>
+                    y <choice><orig>Setien</orig><reg>Setién</reg></choice></persName> 
+                    <ref xml:id="p497c2r1" target="#p497c2n1">(1)</ref>, 
+                    haciendo <choice><orig>dimision</orig><reg>dimisión</reg></choice> de la toga <lb/>
+                    en la Chancillería de <placeName>Granada</placeName>, por buscar <lb/>
+                    en su patria los desengaños del retiro. Compuso <lb/>
+                    este romance <persName type="cont" key="NHELG">Doña Nicolasa de Helguero</persName>.
+                </head>
+                <lg n="1" type="copla_romance">
+                    <l n="1">Huyendo de la fortuna</l>
+                    <l n="2">Te retiras <choice><orig>á</orig><reg>a</reg></choice> la patria,</l>
+                    <l n="3">¡Feliz tú! que <choice><orig>á</orig><reg>a</reg></choice> la que es firme</l>
+                    <l n="4">Anhelas con nobles ansias...</l>
+                </lg>
+                <note xml:id="p497c2n1">
+                    <p>
+                        <ref target="#p497c2r1">(1)</ref> 
+                        <persName type="cont" key="MTORU">Doña María Teresa de Oruña</persName> 
+                        <choice><orig>fué</orig><reg>fue</reg></choice> abadesa de <lb/>
+                        <placeName>las Huelgas</placeName> 
+                        <date from="1792" to="1795">desde el año 1792 al 1795</date>, y reelegida en 
+                        <date from="1798" to="1801">el <lb/>
+                        trienio de 1798 <choice><orig>á</orig><reg>a</reg></choice> 1801</date>.
+                    </p>
+                </note>
+            </div>
+            <div n="03" xml:id="AUT03">
+                <head type="titulo_poema" subtype="menor">
+                    1120.- Paráfrasis del Salmo <hi rend="versalitas">xxii</hi> 
+                    <hi rend="cursiva"><foreign xml:lang="lat">Dominus <lb/>regit</foreign></hi>, &amp;ª
+                </head>
+                <!-- Lo tenemos en Santa Mafalda: no sé si dejar esto, probablemente sí -->
+                <lg>
+                    <l n="1">Dios inmenso me rige,</l>
+                    <l n="2">Me ampara con su brazo poderoso,</l>
+                    <l n="3">Amante me corrige...</l>
+                </lg>
+            </div>
+            <note>
+                <p>
+                    Autógrafo.– Cinco hojas en <choice><abbr>4.°</abbr><expan>cuarto</expan></choice>
+                </p>
+                <p>
+                    <placeName>Biblioteca del Real Palacio</placeName>, S. 2.ª, est. I, P. 5
+                </p>
+            </note>
+        </body>
+    </text>
+</TEI>

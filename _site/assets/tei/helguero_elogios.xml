@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="esquemaHelguero.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Elogios a Henrique Flórez. Edición digital.</title>
+                <title type="short">Elogios</title>
+                <author ref="http://viaf.org/viaf/284161272038347440236" key="NHELG">
+                    <surname>Helguero y Alvarado</surname>
+                    <forename>María Nicolasa</forename>
+                    <date from="1719" to="1805">1719-1805</date>
+                </author>
+                <respStmt>
+                    <persName>
+                        <surname>Méndez</surname>
+                        <forename>Francisco</forename>
+                    </persName>
+                    <resp>editor</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    Primera versión - <date when="2021-06-11">11 de junio de 2021</date>
+                </edition>
+                <respStmt>
+                    <persName>
+                        <surname>Cano García</surname>
+                        <forename>Iñaki</forename>
+                    </persName>
+                    <resp>editor</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>
+                        <surname>Martos Pérez</surname>
+                        <forename>María Dolores</forename>
+                    </persName>
+                    <resp>supervisora</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://www.uned.es">Universidad Nacional de Educación a Distancia (UNED)</orgName>
+                </publisher>
+                <pubPlace>Madrid - Berlín</pubPlace>
+                <date when="2021-06">Fecha de codificación: junio de 2021</date><!--corregirla cuando toque-->
+                <idno type="DOI"></idno><!--Añadir DOI-->
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        Released under a Creative Commons BY-NC-SA License</licence>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note></note><!--Todavía no introduzco nada: dependerá de la naturaleza de la anotación-->
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    Transcripción realizada sobre el ejemplar 
+                    <ptr target="http://biblioteca.galiciana.gal/es/consulta/registro.do?id=6258"/>
+                </bibl>
+                <bibl>Vigo, Biblioteca de la Fundación Penzol (Casa Galega da Cultura) — Signatura: 37</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Noticias de la vida y escritos del Rmo. P. Mro. Fr. Henrique Florez ... : con una relación individual de los Viages que hizo á las Provincias y Ciudades mas principales de España</title>
+                        <author>
+                            <surname>Méndez</surname>
+                            <forename>Francisco</forename>
+                            <roleName>fray</roleName>
+                        </author>
+                    </titleStmt>
+                    <extent>[6], 373 p., 2 f. de grav. : il. ; 4§ (21 cm)</extent>
+                    <publicationStmt>
+                        <publisher>
+                            <surname>Marín</surname>
+                            <forename>Pedro</forename>
+                        </publisher>
+                        <pubPlace>Madrid</pubPlace>
+                        <date when="1780">1780</date>
+                    </publicationStmt>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Esta edición y las asociadas a ella integran <ref target="https://icanogar.gitlab.io/nicolasa/">una publicación 
+                digital en GitLab</ref> que recoge la producción literaria de Nicolasa de Helguero
+                y Alvarado, además de referencia sobre la autora y su contexto de producción.</p>
+                <!--cambiar la URL si se crea una cuenta para BIESES-->
+            </projectDesc>
+            <samplingDecl>
+                <p>Únicamente se codifican los elogios núm. XIX, XX y XXI (págs. 306-312).</p>
+            </samplingDecl>
+            <editorialDecl>
+                <normalization>
+                    <p>La codificación refleja las variantes ortográficas originales y su regularización, de acuerdo a 
+                    los criterios explicitados en <ref target="https://icanogar.gitlab.io/nicolasa/criterios"/> 
+                    y a los criterios editoriales generales del Proyecto Bieses 
+                    <ptr target="https://www.bieses.net/wp-content/uploads/2014/12/criterios_edici%c3%b3n.pdf"/>. 
+                    Se mantienen las mayúsculas originales del texto, así como los usos sintácticos (leísmo, laísmo) que pueden corresponder tanto al estado 
+                    de lengua como a las preferencias de la autora o los impresores.</p>
+                </normalization>
+                <correction>
+                    <p></p>
+                </correction>
+                <punctuation>
+                    <p>No se codifican las intervenciones en la puntuación.</p>
+                </punctuation>
+                <hyphenation>
+                    <p>Se recomponen las palabras cortadas por guion en la línea o verso precedente.</p>
+                </hyphenation>
+            </editorialDecl>
+            <tagsDecl></tagsDecl><!-- por siaca-->
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term></term><!--Cuáles son la materias de la BBDD BIeses? Enlazo a WorldCat o VREF también?-->
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text xml:lang="es">
+        <body>
+            <div n="1" xml:id="ELO01">
+                <head type="titulo_poema" subtype="menor">
+                    <choice><orig>NUMERO</orig><reg>NÚMERO</reg></choice> XIX.
+                </head>
+                <head>
+                    Al <persName type="cont" key="EFLO"><choice><abbr>Rmo.</abbr><expan>Reverendísimo</expan></choice> <choice><abbr>P.</abbr><expan>Padre</expan></choice> 
+                    <choice><abbr>Mro.</abbr><expan>Maestro</expan></choice> 
+                    <choice><orig>Florez</orig><reg>Flórez</reg></choice></persName>.</head>
+                <head>
+                    <hi rend="cursiva">
+                        <choice><orig>EPITAPHIO</orig><reg>EPITAFIO</reg></choice>.
+                    </hi> <ref target="#p306n1" xml:id="p306r1">(*)</ref>
+                </head>
+                <div type="soneto">
+                    <lg n="1" type="cuarteto">
+                        <l n="1">Yace en el centro de esta Tumba <choice><orig>fria</orig><reg>fría</reg></choice></l>
+                        <l n="2">Un rasgo de la pluma de <persName type="hist" key="AGUS">Augustino</persName>,</l>
+                        <l n="3">De la Historia el <choice><orig>Athlante</orig><reg>Atlante</reg></choice> peregrino</l>
+                        <l n="4">Y Honor de la Española <choice><orig>Monarquia</orig><reg>Monarquía</reg></choice>.</l>
+                    </lg>
+                                <fw type="reclamo">Llo-</fw>
+                                <pb n="307"/>
+                                <fw type="encabezado">Apend. N. XIX. Elogios</fw>
+                                <fw type="pag">307</fw>
+                    <lg n="2" type="cuarteto">
+                        <l n="5">Llore la Complutense <choice><orig>Academia</orig><reg>Academía</reg></choice></l>
+                        <!--no se debe corregir este sic por su corrección: afecta a la rima. "Regularizo" a la forma actual añadiendo la tilde-->
+                        <l n="6">Las cenizas de un hijo tan divino.</l>
+                        <l n="7">No giman ya las Prensas: su destino</l>
+                        <l n="8">Giman las <choice><orig>Bibliothecas</orig><reg>Bibliotecas</reg></choice> 
+                            <choice><orig>à</orig><reg>a</reg></choice> 
+                            <choice><orig>porfia</orig><reg>porfía</reg></choice>.</l>
+                    </lg>
+                    <lg n="3">
+                        <l n="9">Inexorable <persName type="mit" key="LAQ">
+                            <choice><orig>Laquesis</orig><reg>Láquesis</reg></choice></persName> no espera</l>
+                        <l n="10">El feliz complemento deseado</l>
+                        <l n="11">De una <hi rend="cursiva"><placeName>España</placeName> Sagrada</hi> que venera</l>
+                        <l n="12">El Orbe Literario por dechado.</l>
+                        <l n="13">¿Quién podrá resistirla, si <choice><orig>sevéra</orig><reg>severa</reg></choice></l>
+                        <l n="14">Corta <choice><orig>tambien</orig><reg>también</reg></choice> el hilo 
+                            <choice><orig>à</orig><reg>a</reg></choice> lo Sagrado?</l>
+                    </lg>
+                </div>
+                <note xml:id="p306n1">
+                    <p>
+                        <ref target="#p306r1">(*)</ref> Compuesto por una 
+                        <persName type="cont" key="NHELG">Ilustre Señora Religiosa</persName>, muy <lb/>
+                        apasionada del <persName type="cont" key="EFLO"><choice><abbr>Rmo.</abbr><expan>Reverendísimo</expan></choice> 
+                        <choice><orig>Florez</orig><reg>Flórez</reg></choice>,</persName> cuya humildad no nos ha permitido <lb/>
+                        por <choice><orig>ningun</orig><reg>ningún</reg></choice> ruego que los Elogios XIX. XX. y XXII. <lb/>
+                        que ha compuesto <choice><orig>à</orig><reg>a</reg></choice> la memoria de aquel <persName type="cont" key="EFLO">Sabio</persName>, se publiquen <lb/>
+                        en su nombre; pero no podrá impedir su <persName type="cont" key="NHELG">Autora</persName> que <lb/>
+                        manifieste yo el alto concepto que de sus prendas y lustroso <lb/>
+                        nacimiento <choice><orig>tenia</orig><reg>tenía</reg></choice> formado el 
+                        <persName type="cont" key="FEIJ"><choice><abbr>Ilmo.</abbr><expan>Ilustrísimo</expan></choice> Señor 
+                        <choice><orig>Feyjoo</orig><reg>Feijoo</reg></choice></persName>, el 
+                        <choice><orig>qual</orig><reg>cual</reg></choice> <lb/>
+                        hablando con dicha <persName type="cont" key="NHELG">Señora</persName> dice: 
+                        <hi rend="cursiva"> Que un excelente nacimiento <lb/>
+                        influye ordinariamente en una excelente 
+                        <choice><orig>educacion</orig><reg>educación</reg></choice>: y que desde <lb/>
+                        que estuvo presente en <placeName><choice><orig>Leon</orig><reg>León</reg></choice></placeName> 
+                        <choice><orig>à</orig><reg>a</reg></choice> mis ojos, quedó para siempre <lb/>
+                        presente en mi memoria para tributar la 
+                        <choice><orig>veneracion</orig><reg>veneración</reg></choice> que debo al <lb/>
+                        admirable conjunto de tantas bellas 
+                        <choice><orig>qualidades</orig><reg>cualidades</reg></choice>. =
+                        <!-- Mejor añadir aquí una verdadera doble raya tipográfica --> En orden 
+                        <choice><orig>à</orig><reg>a</reg></choice> <lb/>
+                        las Liras me ratifico en lo dicho, pues en ellas veo que si 
+                        <persName type="cont" key="NHELG">
+                        <choice><abbr>V.</abbr><expan>Vuestra</expan></choice> <choice><abbr>S.</abbr><reg>Señoría</reg></choice></persName> <lb/>
+                                <fw type="reclamo">por-</fw>
+                                <pb n="307"/>
+                        por el color nativo y por el del 
+                        <choice><orig>habito</orig><reg>hábito</reg></choice> iguala al cisne en la <lb/>
+                        blancura, le excede en la 
+                        <choice><orig>melodia</orig><reg>melodía</reg></choice>.</hi> [Carta original del 
+                        <persName type="cont" key="FEIJ"><choice><abbr>Ilmo.</abbr><expan>Ilustrísimo</expan></choice> <lb/>
+                        <choice><orig>Feyjoo</orig><reg>Feijoo</reg></choice></persName>, escrita 
+                        <choice><orig>à</orig><reg>a</reg></choice> la enunciada 
+                        <persName type="cont" key="NHELG">Señora</persName>, firmada en 
+                        <placeName>Oviedo</placeName> <lb/>
+                        <choice><orig>à</orig><reg>a</reg></choice> <date when="1749-02-26">26. de Febrero de 1749</date>.]
+                    </p>
+                    <p>
+                        En esquela original de dicho 
+                        <persName type="cont" key="FEIJ"><choice><abbr>Ilmo.</abbr><expan>Ilustrísimo</expan></choice></persName> 
+                        escrita al <persName type="cont" key="LGMAN">Señor <lb/>
+                        Don Luis <choice><orig>Garcia</orig><reg>García</reg></choice> Mañero, Doctoral de 
+                        <placeName>Oviedo</placeName>, y Arzobispo <lb/>
+                        que murió de <placeName>Zaragoza</placeName></persName> le dice: <hi rend="cursiva">Muy Señor 
+                        <choice><orig>mio</orig><reg>mío</reg></choice>: la 
+                        <choice><orig>Cancion</orig><reg>Canción</reg></choice> <lb/>
+                        compuesta por mi <persName type="cont" key="NHELG">Señora Doña N. de N.</persName> que 
+                        <persName type="cont" key="LGMAN"><choice><abbr>V.</abbr><expan>Vuestra</expan></choice> 
+                        <choice><abbr>S.</abbr><reg>Señoría</reg></choice></persName> se sirvió <lb/>
+                        de remitirme, es muy <choice><orig>energica</orig><reg>enérgica</reg></choice>, dulce, 
+                        <choice><orig>pathetica</orig><reg>patética</reg></choice> y natural, <lb/>
+                        y es lo mismo que decir que tiene todas las perfecciones <lb/>
+                        que pide el asunto.</hi> [He puesto el juicio que este 
+                        <persName type="cont" key="FEIJ"><choice><abbr>Ilmo.</abbr><expan>Ilustrísimo</expan></choice></persName> 
+                        <choice><orig>tenia</orig><reg>tenía</reg></choice> <lb/>
+                        formado de esta <persName type="cont" key="NHELG">Señora</persName> y de su ciencia 
+                        <choice><orig>poetica</orig><reg>poética</reg></choice>, para <lb/>
+                        que sirva de apoyo <choice><orig>à</orig><reg>a</reg></choice> los elogios que del 
+                        <persName type="cont" key="EFLO"><choice><abbr>Mro.</abbr><expan>Maestro</expan></choice> 
+                        <choice><orig>Florez</orig><reg>Flórez</reg></choice></persName> ha <lb/>
+                        compuesto; pues no gustando que se declare su nombre, <lb/>
+                        tenga <choice><orig>à</orig><reg>a</reg></choice> lo menos el público esta noticia para que les <lb/>
+                        dé el valor que corresponde.]
+                    </p>
+                </note>
+            </div>
+            <div n="2" xml:id="ELO02">
+                <head type="titulo_poema">
+                    <choice><orig>NUMERO</orig><reg>NÚMERO</reg></choice> XX.
+                </head>
+                <head><hi rend="cursiva">ROMANCE.</hi></head>
+                <div type="romance">
+                    <lg n="1" type="copla_romance">
+                        <l n="1">Sabio <hi rend="mayusculas"><persName type="cont" key="EFLO">
+                            <choice><orig>FLOREZ</orig><reg>FLÓREZ</reg></choice></persName></hi> generoso</l>
+                        <l n="2">que <choice><orig>à</orig><reg>a</reg></choice> nuestra <placeName>España</placeName> enriqueces;</l>
+                        <l n="3">hijo del Grande <persName type="x" key="y">Augustino</persName>,</l>
+                        <l n="4">rasgo <choice><orig>sutíl</orig><reg>sutil</reg></choice> de su mente;</l>
+                    </lg>
+                    <lg n="2">
+                        <l n="5">honor de nuestra <placeName>Castilla</placeName>,</l>
+                                    <fw type="gathering">V2</fw>
+                                    <fw type="reclamo">à</fw>
+                                    <pb n="308"/>
+                                    <fw type="pag">308</fw>
+                                    <fw type="encabezado">Apend. N. XX. Elogios</fw>
+                        <l n="6"><choice><orig>à</orig><reg>a</reg></choice> quien tu cuna ennoblece</l>
+                        <l n="7">y, fecunda Madre tuya,</l>
+                        <l n="8">gozosa rejuvenece;</l>
+                    </lg>
+                    <lg n="3" type="copla_romance">
+                        <l n="9">en <choice><orig>tí</orig><reg>ti</reg></choice>, <persName type="cont" key="EFLO">docto Religioso</persName>,</l>
+                        <l n="10">su mayor <choice><orig>thesoro</orig><reg>tesoro</reg></choice> tiene,</l>
+                        <l n="11">pues solo con tus talentos</l>
+                        <l n="12">todas las ciencias adquiere.</l>
+                    </lg>
+                    <lg n="4" type="copla_romance">
+                        <l n="13">La leal <placeName>Ciudad de Burgos</placeName></l>
+                        <l n="14">alce la nevada frente,</l>
+                        <l n="15">mire la cercana Patria</l>
+                        <l n="16">en que naciste <choice><orig>à</orig><reg>a</reg></choice> ser 
+                            <choice><orig>Phenix</orig><reg>Fénix</reg></choice>.</l>
+                    </lg>
+                    <lg n="5" type="copla_romance">
+                        <l n="17">El <geogName>Tormes</geogName> que 
+                            <choice><orig>dió</orig><reg>dio</reg></choice> sus Palmas</l>
+                        <l n="18"><choice><orig>à</orig><reg>a</reg></choice> tus primeras niñeces,</l>
+                        <l n="19">de tus <choice><orig>triumphos</orig><reg>triunfos</reg></choice> literarios</l>
+                        <l n="20">corra <choice><orig>à</orig><reg>a</reg></choice> informar 
+                            <choice><orig>eloquente</orig><reg>elocuente</reg></choice>.</l>
+                    </lg>
+                    <lg n="6" type="copla_romance">
+                        <l n="21">De la <placeName><choice><orig>pacifica</orig><reg>pacífica</reg></choice> Oliva</placeName></l>
+                        <l n="22">que en el <geogName>Henares</geogName> florece</l>
+                        <l n="23">te dedicaron corona</l>
+                        <l n="24">los ingenios Complutenses.</l>
+                    </lg>
+                    <lg n="7" type="copla_romance">
+                        <l n="25"><geogName>Manzanares</geogName> adornado</l>
+                        <l n="26">de Lirios y de Laureles,</l>
+                        <l n="27">de <choice><orig>haver</orig><reg>haber</reg></choice> besado tus plantas</l>
+                        <l n="28">ufano se ensorberbece.</l>
+                    </lg>
+                    <lg n="8" type="copla_romance">
+                        <l n="29">El <geogName>Betis</geogName> que en sus <choice><orig>Eliseos</orig><reg>Elíseos</reg></choice></l>
+                        <l n="30">tuvo la dicha de verte,</l>
+                        <l n="31">en obsequio <choice><orig>à</orig><reg>a</reg></choice> tus recuerdos</l>
+                        <l n="32">el nombre <choice><sic>dejo</sic><corr>dejó</corr></choice> de <geogName >Lete</geogName>.</l>
+                    </lg>
+                    <lg n="9" type="copla_romance">
+                        <l n="33">Hasta el <geogName><choice><orig>Danuvio</orig><reg>Danubio</reg></choice></geogName>, que undoso</l>
+                        <l n="34">privilegio de Mar tiene,</l>
+                        <l n="35">con los corales Austriacos</l>
+                        <l n="36">vano, tus obras guarnece.</l>
+                    </lg>
+                    <lg n="10" type="copla_romance">
+                        <l n="37">Nuestras Reales <choice><orig>Heroinas</orig><reg>Heroínas</reg></choice></l>
+                        <!-- si se refiere a su poema Las Heroínas de la ley antigua, esto permitiría datarlo.-->
+                        <l n="38">elogiadas dignamente,</l>
+                        <l n="39">por tus Libros eruditos</l>
+                        <l n="40">se coronaron dos veces.</l>
+                    </lg>
+                                    <fw type="reclamo">Li-</fw>
+                                    <pb n="309"/>
+                                    <fw type="encabezado">Apend. N. XX. Elogios</fw>
+                                    <fw type="pag">309</fw>
+                    <lg n="11" type="copla_romance">
+                        <l n="41">Liberal Naturaleza</l>
+                        <l n="42">con <choice><orig>placido</orig><reg>plácido</reg></choice> rostro atiende</l>
+                        <l n="43"><choice><orig>à</orig><reg>a</reg></choice> perpetuar sus prodigios</l>
+                        <l n="44">en tu docto Gabinete.</l>
+                    </lg>
+                    <lg n="12" type="copla_romance">
+                        <l n="45">La <choice><orig>Antiguedad</orig><reg>Antigüedad</reg></choice> venerable</l>
+                        <l n="46">en Monedas aparece,</l>
+                        <l n="47">adornada de noticias</l>
+                        <l n="48">que <choice><orig>à</orig><reg>a</reg></choice> tus desvelos se deben.</l>
+                    </lg>
+                    <lg n="13" type="copla_romance">
+                        <l n="49">En estudiosas tareas</l>
+                        <l n="50">viviste ocupado siempre,</l>
+                        <l n="51">introduciendo <choice><orig>à</orig><reg>a</reg></choice> los Siglos</l>
+                        <l n="52">en los instantes presentes.</l>
+                    </lg>
+                    <lg n="14" type="copla_romance">
+                        <l n="53">Faltaste de nuestra vista,</l>
+                        <l n="54">mas no quedamos ausentes;</l>
+                        <l n="55">pues en tus doctos escritos</l>
+                        <l n="56">tu <choice><orig>espiritu</orig><reg>espíritu</reg></choice> permanece.</l>
+                    </lg>
+                    <lg n="15" type="copla_romance">
+                        <l n="57">Dulce sea tu memoria,</l>
+                        <l n="58">que el dorado <geogName>Tajo</geogName> lleve</l>
+                        <l n="59">desde el <geogName>Campo Carpetano</geogName></l>
+                        <l n="60"><choice><orig>à</orig><reg>a</reg></choice> los <geogName>Atrios 
+                            <choice><orig>Athenienses</orig><reg>Atenienses</reg></choice></geogName>.</l>
+                    </lg>
+                    <lg n="16" type="copla_romance">
+                        <l n="61">Canten los sonoros Cisnes</l>
+                        <l n="62">suave, tierna y diestramente:</l>
+                        <l n="63">no se dé lugar al llanto</l>
+                        <l n="64">en fin que no ha sido muerte.</l>
+                    </lg>
+                    <lg n="17" type="copla_romance">
+                        <l n="65">Canten: y los dulces picos</l>
+                        <l n="66">aparten de los Cipreses:</l>
+                        <l n="67">corten las hojas triunfantes</l>
+                            <!--antes ha escrito .triumphos. . Esto sugiere que algunas grafías son deliberadamente arcaizantes-->
+                        <l n="68">con que <choice><orig>à</orig><reg>a</reg></choice> tu sepulcro cerquen.</l>
+                    </lg>
+                    <lg n="18" type="copla_romance">
+                        <l n="69">Del <geogName>Ebro</geogName> canoras Liras</l>
+                        <l n="70">para elogiarte se templen,</l>
+                        <l n="71">y <choice><orig>à</orig><reg>a</reg></choice> darte cultos unidas</l>
+                        <l n="72">sus consonancias aumenten.</l>
+                    </lg>
+                    <lg n="19" type="copla_romance">
+                        <l n="73"><placeName>Madrid</placeName>, <placeName><choice><orig>Memphis</orig><reg>Menfis</reg></choice></placeName> 
+                            <choice><orig>mas</orig><reg>más</reg></choice> gloriosa</l>
+                        <l n="74">del Sol, por quien resplandece</l>
+                            <!--DUDA puntuación: emplee a sus númenes, por quien resplandece, en grabarte el epitafio. Es un poco forzado -->
+                        <l n="75">en grabarte el <choice><orig>epitaphio</orig><reg>epitafio</reg></choice></l>
+                                    <fw type="gathering">V3</fw>
+                                    <fw type="reclamo">à</fw>
+                                    <pb n="310"/>
+                                    <fw type="pag">310</fw>
+                                    <fw type="encabezado">Apend. N. XX. Elogios</fw>
+                        <l n="76"><choice><orig>à</orig><reg>a</reg></choice> sus 
+                            <choice><orig>numenes</orig><reg>númenes</reg></choice> emplee.</l>
+                    </lg>
+                    <lg n="20" type="copla_romance">
+                        <l n="77">El Regio <persName>Gallo</persName> de <placeName>Francia</placeName></l>
+                        <l n="78">que en <placeName>Bayona</placeName> cantó alegre,</l>
+                            <!--es un personaje determinado, pero cuál?-->
+                        <l n="79">al mirarte peregrino</l>
+                        <l n="80"><choice><sic>triplico</sic><corr>triplicó</corr></choice> la voz valiente.</l>
+                    </lg>
+                    <lg n="21" type="copla_romance">
+                        <l n="81">Del ostentoso <choice><orig>plumage</orig><reg>plumaje</reg></choice></l>
+                        <l n="82">que <choice><orig>à</orig><reg>a</reg></choice> las Naciones se extiende,</l>
+                        <l n="83">las sutiles plumas corte</l>
+                        <l n="84">que <choice><orig>à</orig><reg>a</reg></choice> tu 
+                            <persName type="mit" key="MIN">Minerva</persName> celebren.</l>
+                            <!-- al decir "corte" en singular entiendo que se sigue refiriendo a un escritor francés que 
+                            escribe sobre diferentes países-->
+                    </lg>
+                    <lg n="22" type="copla_romance">
+                        <l n="85">La valerosa <placeName>Cantabria</placeName></l>
+                        <l n="86">(que al mismo <persName type="hist" key="OCT">Augusto</persName> estremece)</l>
+                        <l n="87">para <choice><sic>eregirte</sic><corr>erigirte</corr></choice> Obelisco</l>
+                        <l n="88">todos sus montes desprende.</l>
+                    </lg>
+                    <lg n="23" type="copla_romance">
+                        <l n="89">A guardar <choice><orig>à</orig><reg>a</reg></choice> tus cenizas</l>
+                        <l n="90">se postra el <choice><orig>Leon</orig><reg>León</reg></choice> rugiente</l>
+                        <l n="91">que en ti venera <choice><orig>à</orig><reg>a</reg></choice> la 
+                            <placeName>España</placeName></l>
+                            <!--antes escribe tí, aquí parece una i-->
+                        <l n="92">que con sus garras defiende.</l>
+                    </lg>
+                    <lg n="24" type="copla_romance">
+                        <l n="93">En dos elevadas Palmas</l>
+                        <l n="94">que en su Real <choice><orig>Jardin</orig><reg>Jardín</reg></choice> te ofrece,</l>
+                        <l n="95">tu nombre se fije, <hi rend="mayusculas"><persName type="cont" key="EFLO">HENRICO</persName></hi>,</l>
+                        <l n="96">tu fama se reverencie.</l>
+                    </lg>
+                </div>
+            </div>
+            <div n="3" xml:id="ELO03">
+                <head type="titulo_poema">
+                    <hi rend="cursiva">SONETO.</hi>
+                </head>
+                <div type="soneto">
+                    <lg n="1" type="cuarteto">
+                        <l n="1">No consiguió la muerte rigurosa</l>
+                        <l n="2">cortar de 
+                        <persName type="cont" key="hist">Henrico</persName> la preciosa vida,</l>
+                        <l n="3">que si 
+                        <persName type="cont" key="hist">Henrico</persName> murió, fue de la herida</l>
+                        <l n="4">que ejecutó la <persName type="bibl" key="DIOS">mano Poderosa</persName>.</l>
+                    </lg>
+                    <lg n="2" type="cuarteto">
+                        <l n="5">Penetró al <choice><orig>corazon</orig><reg>corazón</reg></choice> flecha amorosa,</l>
+                        <l n="6">por soberano impulso dirigida,</l>
+                        <l n="7">y <choice><orig>à</orig><reg>a</reg></choice> 
+                            <choice><orig>division</orig><reg>división</reg></choice> tan dulce agradecida</l>
+                        <l n="8">el alma, hizo <choice><orig>à</orig><reg>a</reg></choice> la muerte venturosa.</l>
+                    </lg>
+                    <lg n="3">
+                        <l n="9">Esta ley para todos tan severa</l>
+                        <l n="10">suavizó <persName type="cont" key="hist">Henrico</persName> con feliz memoria,</l>
+                        <l n="11">pues 
+                            <choice><orig>à</orig><reg>a</reg></choice> elevarla <choice><orig>à</orig><reg>a</reg></choice> la Celeste 
+                            <choice><orig>Esphera</orig><reg>Esfera</reg></choice></l>
+                                <fw type="reclamo">su-</fw>
+                                <pb n="311"/>
+                                <fw type="encabezado">Apend. N. XXI. Elogios</fw>
+                                <fw type="pag">311</fw>
+                        <l n="12"><choice><orig>subia</orig><reg>subía</reg></choice> por la escala de la Historia:</l>
+                        <l n="13">y <choice><orig>asi</orig><reg>así</reg></choice> el dichoso fin de la carrera</l>
+                        <l n="14">todas sus Obras coronó de gloria.</l>
+                    </lg>
+                </div>
+            </div>
+            <gap extent="parte de la página 311" quantity="1" unit="elogio" reason="sampling"/>
+                                <pb n="312"/>
+                                <fw type="pag">312</fw>
+                                <fw type="encabezado">Apend. N. XXII. Elogios</fw>
+            <div n="4" xml:id="ELO04">
+                <head type="titulo_poema">
+                    <choice><orig>NUMERO</orig><reg>NÚMERO</reg></choice> XXII.
+                </head>
+                <head>
+                    <hi rend="cursiva">OCTAVAS.</hi>
+                </head>
+                <div type="octavas">
+                    <lg n="1" type="octava">
+                        <l n="1">Detente, inadvertido caminante:</l>
+                        <l n="2">Aparta el pie, no pises esa losa</l>
+                        <l n="3">Que cubre <choice><orig>à</orig><reg>a</reg></choice> 
+                            <persName type="x" key="y">Henrico</persName>, que murió de amante</l>
+                        <l n="4">—Benigna enfermedad, muerte gloriosa—.</l>
+                        <l n="5">De tu animoso <choice><orig>espiritu</orig><reg>espíritu</reg></choice> gigante</l>
+                        <l n="6">Ceniza es ya la caja prodigiosa:</l>
+                        <l n="7">Se fue el alma que en vuelo peregrino</l>
+                        <l n="8">Siguió veloz al <persName type="hist" key="AGUS">
+                            <choice><orig>Phenix</orig><reg>Fénix</reg></choice> Augustino</persName>.</l>
+                    </lg>
+                    <lg n="2" type="octava">
+                        <l n="9"><choice><orig>Aqui</orig><reg>Aquí</reg></choice> yace el 
+                            <persName type="cont" key="hist"><choice><orig>Varon</orig><reg>Varón</reg></choice></persName> que buscó un Sabio</l>
+                        <l n="10">Con antorcha brillante al <choice><orig>Medio-dia</orig><reg>Mediodía</reg></choice>;</l>
+                        <l n="11">Aquel que en la dulzura de su labio</l>
+                        <l n="12">Formaba la <choice><orig>prision</orig><reg>prisión</reg></choice> sin tiranía;</l>
+                        <l n="13">Aquel que cautivaba sin agravio</l>
+                        <l n="14">Almas que allá <persName type="mit" key="HERC">Alcides</persName> 
+                            <choice><orig>atrahía</orig><reg>atraía</reg></choice>:</l>
+                        <l n="15">Aquel que todo sal y luces bellas</l>
+                        <l n="16">En su Palma feliz enlaza estrellas.</l>
+                    </lg>
+                    <lg n="3" type="octava">
+                        <l n="17"><choice><orig>Aqui</orig><reg>Aquí</reg></choice> yace la Oliva de la 
+                            <placeName>España</placeName>,</l>
+                        <l n="18">Cuya fecundidad fue nuestra gloria:</l>
+                        <l n="19">Sin su sombra el dolor nos acompaña</l>
+                        <l n="20">Y de luto se cubre la memoria.</l>
+                        <l n="21">Cruel la muerte con fatal guadaña</l>
+                        <l n="22">Cortó la vida que él la <choice><orig>dió</orig><reg>dio</reg></choice> 
+                            <choice><orig>à</orig><reg>a</reg></choice> la Historia:</l>
+                        <l n="23">Leve sea la tierra <choice><orig>à</orig><reg>a</reg></choice> su ceniza,</l>
+                        <l n="24">Pues por docto y humilde se eterniza.</l>
+                    </lg>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

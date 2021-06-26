@@ -1,0 +1,401 @@
+---
+sitemap: false
+---
+
+/*
+  Common Variables
+
+  Feel free to change!
+*/
+
+/* Fonts */
+$main-font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$heading-font: "Palatino Linotype", sans-serif;
+$regular-font-size: 1.25em; /* 20px / 16px = 1.25em; support text resizing in all browsers */
+
+/*
+  Color
+
+  Make sure to leave color-scheme in `_config.yml` file empty for granular control
+*/
+
+$text-color: #454545;
+$heading-color: #404040;
+$link-color: #841212;
+
+@import "ed";
+@import "syntax";
+@import "CETEIcean.css";
+
+hr {
+  background-color: #8f5536;
+  height: 5px;
+}
+
+ul {
+  list-style-type:square;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+blockquote {
+  margin-left: 10%;
+}
+
+/* Títulos.
+Hay que arreglar esta guarrería (y hacer una tipología estable para todo Bieses)*/
+
+tei-div > tei-head {
+  text-indent: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+tei-head[type="tipo_estrofa"]{
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 125%;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/* Este es el antiguo comportamiento del "mini", que ahora aplica a todo <lg>
+Cuidado que, si hay dos <lg> anidados, lo aplica dos veces!
+(Una solución muy elegante, sin embargo, para los bloques de estribillo */
+
+tei-lg {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+tei-lb, tei-cb, tei-fw {
+  display: none
+}
+
+tei-ref {
+  text-decoration: none;
+}
+
+tei-div > tei-note:after,
+tei-div > tei-note:before {
+  content:none
+}
+
+/* Pruebo cosas con los tooltip */
+
+tei-persName,
+tei-placeName {
+  position: relative;
+}
+
+tei-note[type="editor"] {
+  visibility: hidden;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #841212;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 15rem;
+  overflow-y: auto;
+}
+tei-placeName:hover > tei-note[type="editor"],
+tei-persName:hover > tei-note[type="editor"] {
+  visibility: visible;
+  position: absolute;
+  left: 12rem;
+  font-weight: normal;
+  font-size: 80%;
+}
+
+/* Portada e Índice */
+
+tei-div[type="portada"] > tei-p, tei-head {
+  text-align: center;
+}
+
+tei-div[type="indice"] > tei-head{
+  text-align: center;
+}
+
+tei-div[type="indice"] > tei-p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+tei-div > tei-p > tei-lb {
+  display: inline
+}
+
+tei-div > tei-p > tei-hi tei-lb {
+  display: inline
+}
+
+tei-div > tei-head > tei-lb {
+  display: inline
+}
+
+tei-div > tei-head[subtype="mayor"] > tei-lb {
+  display: inline
+}
+
+tei-div > tei-head[subtype="menor"] > tei-lb,
+tei-stage > tei-lb {
+  display: none
+}
+tei-head[subtype="mayor"] {
+  font-size: 150%;
+  font-weight: bold;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+tei-head[subtype="menor"] {
+  font-size: 125%;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+tei-head[type="titulo_seccion"] {
+  font-size: 120%;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* ¿Quiero o no quiero los lb en los títulos? */
+
+/*
+Aditional renditions
+*/
+
+tei-hi[rend="cursiva"],
+tei-lg[rend="cursiva"],
+tei-p[rend="cursiva"] {
+  font-style: italic;
+}
+
+tei-hi[rend="versalitas"] {
+  font-variant: small-caps;
+}
+
+tei-hi[rend="mayusculas"] {
+  font-variant: normal
+}
+
+tei-hi[rend="mayor"] {
+  font-size: 150%;
+}
+
+tei-choice > tei-abbr, tei-sic, tei-orig {
+  display: none
+}
+
+tei-choice > tei-expan, tei-corr, tei-reg {
+  display: inline
+}
+
+tei-subst > tei-del {
+  display: none
+}
+
+tei-supr > tei-add {
+  display: inline
+}
+
+tei-supplied {
+  display: inline
+}
+
+/* tei-abbr/expan & orig/reg & sic/corr properties can be reversed in order to show the original text*/
+
+tei-orig, tei-reg, tei-sic, tei-corr,
+tei-abbr, tei-expan, tei-del, tei-add,
+tei-supplied {
+  text-decoration: underline dotted;
+}
+
+/*
+  This gives format to semantic markup.
+
+
+tei-persName {
+  font-weight: bold;
+}
+
+tei-placeName {
+  color: darkslateblue;
+  font-weight: bold;
+}
+
+tei-geogName {
+  color: darkslategrey;
+  font-weight: bold;
+}
+
+*/
+
+/* 
+  This gives format to the tags in dramatic compositions
+*/
+
+tei-castList {
+  display: block;
+  font-style: italic;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+tei-l > tei-stage {
+  display: inline;
+}
+
+tei-l > tei-stage::before {
+  content: " ";
+}
+
+tei-stage[type="acota_libre"] {
+  display: block;
+  font-style: italic;
+}
+
+tei-speaker {
+  margin-left: 35%;
+}
+
+tei-stage[type="speaker"] {
+  margin-left:35%
+}
+
+/* Elementos flex */
+
+.flexbox {
+  display: flex;
+  gap: 5%;
+}
+
+.flexbox2 {
+  display: flex;
+}
+
+.flexme {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.flexme2 {
+  flex: 1;
+  flex-basis: content;
+  margin-bottom: 0.5rem;
+}
+
+/* Pie pegado a la zona inferior de todas las páginas con layout: tei 
+No tiene el mismo ancho en todas las pantallas!!!  */
+
+div.fix {
+  position: fixed;
+  background-color: white;
+  width: 38em;
+  bottom: 0;
+  left: 0;
+  right:0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+hr.fix {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+div#TEI {
+  margin-bottom: 4rem;
+}
+
+/* Justifica, centra y sangra cosas */
+
+.justificame {
+  text-align: justify;
+}
+
+.centrame {
+  text-align: center;;
+}
+
+.sangrame {
+  text-indent: 5%
+}
+
+.alin_dcha {
+  text-align: end;
+}
+
+/*
+  This hides TEI elements and non desired additions such as spaces and brackets
+*/
+
+tei-choice tei-abbr + tei-expan:before,
+tei-choice tei-expan + tei-abbr:before,
+tei-choice tei-sic + tei-corr:before,
+tei-choice tei-corr + tei-sic:before,
+tei-choice tei-orig + tei-reg:before,
+tei-choice tei-reg + tei-orig:before {
+  content: "";
+}
+
+tei-choice tei-abbr + tei-expan:after,
+tei-choice tei-expan + tei-abbr:after,
+tei-choice tei-sic + tei-corr:after,
+tei-choice tei-corr + tei-sic:after,
+tei-choice tei-orig + tei-reg:after,
+tei-choice tei-reg + tei-orig:after {
+  content: "";
+}
+
+/* Números de verso + Versos hiper- e hipométricos 
+Cuidado con las precedencias: en caso de conflicto, la última regla es la que se superpone */
+
+tei-l[n$="5"]::before,
+tei-l[n$="0"]::before {
+  content: " " attr(n) " ";
+  position: absolute;
+  left: 30%;
+}
+
+tei-l[real]::before {
+  content: "✠";
+  position: absolute;
+  font-size: 120%;
+  left: 35%;
+}
+
+/* Formato de imágenes y elementos relacionados */
+
+figcaption {
+  font-size: 80%;
+}
+
+img.foto_menor {
+  float: left;
+  width: 50%;
+  border-radius: 10px; /* no me lo coge */
+  margin: 0;
+  margin-right: 20px;
+}
+
+img.foto_menor_vertical {
+  float: left;
+  width: 40%;
+  border-radius: 10px; /* no me lo coge */
+  margin: 0;
+  margin-right: 20px;
+}

@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div id="TEI"></div>
+
+<!-- No genera aún los enlaces a Anterior y Siguiente pero lo dejo a modo de placeholder -->
+<div class="fix">
+  <hr class="fix">
+  <div class="flexbox">
+      {% if page.previous.url %}
+      <p class="flexme" style="text-align: left;"><a href="{{ page.previous.url }}"></a>Anterior</p>
+      {% endif %}
+      <p class="flexme" style="text-align: center;"><a href="#arriba">Volver arriba</a></p>
+      {% if page.next.url %}
+      <p class="flexme" style="text-align: right;"><a href="{{ page.next.url }}"></a>Siguiente</p>
+      {% endif %}
+  </div>
+</div>
+
+<script src="{{site.baseurl}}/assets/js/CETEI.js"></script>
+<script>
+  var CETEIcean = new CETEI()
+  CETEIcean.getHTML5("{{site.baseurl}}/assets/tei/{{page.document}}", function(data) {
+    document.getElementById("TEI").appendChild(data)
+  })
+</script>

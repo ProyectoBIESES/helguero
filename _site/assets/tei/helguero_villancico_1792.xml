@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="esquemaHelguero.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Villancico de las Fiestas de Navas (1792). Edición digital.</title>
+                <title type="short">Villancico (1792)</title>
+                <author ref="http://viaf.org/viaf/284161272038347440236" key="NHELG">
+                    <surname>Helguero y Alvarado</surname>
+                    <forename>María Nicolasa</forename>
+                    <date from="1719" to="1805">1719-1805</date>
+                </author>
+                <respStmt>
+                    <persName>
+                        <surname>Muñiz</surname>
+                        <forename>Roberto</forename>
+                    </persName>
+                    <resp>transcriptor</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    Primera versión - <date when="2021-06-11">11 de junio de 2021</date>
+                </edition>
+                <respStmt>
+                    <persName>
+                        <surname>Cano García</surname>
+                        <forename>Iñaki</forename>
+                    </persName>
+                    <resp>editor</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>
+                        <surname>Martos Pérez</surname>
+                        <forename>María Dolores</forename>
+                    </persName>
+                    <resp>supervisora</resp>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://www.uned.es">Universidad Nacional de Educación a Distancia (UNED)</orgName>
+                </publisher>
+                <pubPlace>Madrid - Berlín</pubPlace>
+                <date when="2021-06-11">Fecha de codificación: 11 de junio de 2021</date><!--corregirla cuando toque-->
+                <idno type="DOI"></idno><!--Añadir DOI-->
+                <availability status="free">
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        Released under a Creative Commons BY-NC-SA License</licence>
+                </availability>
+            </publicationStmt>
+            <notesStmt>
+                <note></note><!--Todavía no introduzco nada: dependerá de la naturaleza de la anotación-->
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    Transcripción realizada sobre el ejemplar 
+                    <ptr target="https://bibliotecadigital.jcyl.es/i18n/consulta/registro.cmd?id=9765"/>
+                </bibl>
+                <bibl>Valladolid, Biblioteca de Castilla y León — Signatura: G-E 1067</bibl>
+                <biblFull>
+                    <titleStmt>
+                        <title>Biblioteca Cisterciense Española</title>
+                        <author>
+                            <surname>Muñiz</surname>
+                            <forename>Roberto</forename>
+                            <roleName>fray</roleName>
+                        </author>
+                    </titleStmt>
+                    <extent>[16], 400 p. ; 4º</extent>
+                    <publicationStmt>
+                        <publisher>
+                            <surname>Navas</surname>
+                            <forename>Joseph</forename>
+                            <nameLink>de</nameLink>
+                        </publisher>
+                        <pubPlace>Burgos</pubPlace>
+                        <date when="1794">1793</date>
+                    </publicationStmt>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Esta edición y las asociadas a ella integran <ref target="https://icanogar.gitlab.io/nicolasa/">una publicación 
+                digital en GitLab</ref> que recoge la producción literaria de María Nicolasa Helguero
+                y Alvarado, además de referencia sobre la autora y su contexto de producción.</p><!--cambiar la URL si se crea una cuenta para BIESES-->
+            </projectDesc>
+            <samplingDecl>
+                <p>Únicamente se codifica el poema de María Nicolasa Helguero trascrito en la página 163 del volumen.</p>
+            </samplingDecl>
+            <editorialDecl>
+                <normalization>
+                    <p>La codificación refleja las variantes ortográficas originales y su regularización, de acuerdo a 
+                    los criterios explicitados en <ref target="https://icanogar.gitlab.io/nicolasa/criterios"/> 
+                    y a los criterios editoriales generales del Proyecto Bieses 
+                    <ptr target="https://www.bieses.net/wp-content/uploads/2014/12/criterios_edici%c3%b3n.pdf"/>. 
+                    Se mantienen las mayúsculas originales del texto, así como los usos sintácticos (leísmo, laísmo) que pueden corresponder tanto al estado 
+                    de lengua como a las preferencias de la autora o los impresores.</p>
+                </normalization>
+                <correction>
+                    <p></p>
+                </correction>
+                <punctuation>
+                    <p>No se codifican las intervenciones en la puntuación.</p>
+                </punctuation>
+                <hyphenation>
+                    <p>Se recomponen las palabras cortadas por guion en la línea o verso precedente.</p>
+                </hyphenation>
+            </editorialDecl>
+            <tagsDecl></tagsDecl><!-- por siaca-->
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords>
+                    <term></term><!--Cuáles son la materias de la BBDD BIeses? Enlazo a WorldCat o VREF también?-->
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+
+    <text xml:lang="es">
+        <body>
+            <div xml:id="VIL92">
+                <head type="titulo_poema" subtype="menor">
+                    <supplied>[Villancico]</supplied> que <choice><orig>cantò</orig><reg>cantó</reg></choice> la Capilla de este 
+                    <placeName>Real Monasterio</placeName> en la 
+                    Fiesta <lb/>de las Navas en este <date when="1792-07-16">año de 1792. 
+                    <choice><orig>dia</orig><reg>día</reg></choice> 16 de Julio</date>.
+                </head>
+                <div type="pareados">
+                    <lg n="1" type="pareado">
+                        <l n="1">Sale 
+                            <choice><orig>à</orig><reg>a</reg></choice> vencer 
+                            <persName type="hist" key="A8">Alfonso,
+                            <note type="editor">Alfonso VIII de Castilla (1155-1214), fundador junto a su esposa, Leonor de Plantagenet, del 
+                            Real Monasterio de Santa María la Real de las Huelgas. Esto posibilitó que las mujeres nobles alcanzasen ciertas 
+                            responsabilidades de poder, si bien dentro de la vida monástica. El monasterio sirvió también como panteón real.</note>
+                            </persName> acompañado</l>
+                        <l n="2">Del <persName type="hist" key="RADA">insigne Pastor, 
+                            <choice><orig>sàbio</orig><reg>sabio</reg></choice> Primado
+                            <note type="editor">Rodrigo Jiménez de Rada, arzobispo primado de Toledo y futuro canciller de Castilla 
+                            bajo Fernando III. Traductor del Corán al latín y autor de «De rebus Hispaniae», una historia de 
+                            España desde sus orígenes míticos hasta 1243</note></persName>.</l>
+                    </lg>
+                    <lg n="2" type="pareado">
+                        <l n="3">Mira el peligro, y 
+                            <choice><orig>quando</orig><reg>cuando</reg></choice> le parece</l>
+                        <l n="4">Que 
+                            <choice><orig>algun</orig><reg>algún</reg></choice> tanto su aliento desfallece,</l>
+                    </lg>
+                    <lg n="3" type="pareado">
+                        <l n="5">Le busca en 
+                            <persName type="hist" key="RADA">Rada, 
+                            <choice><orig>Cantabro</orig><reg>Cántabro</reg></choice> animoso
+                            <note type="editor">Realmente Jiménez de Rada era natural de Puente la Reina, cerca de Pamplona, en Navarra. 
+                            Con el término «Cantabria», que antes de la moderna división en provincias abarcaba de forma imprecisa la franja de 
+                            costa entre la cordillera y el mar Cantábricos, la autora establece paralelos con el pueblo 
+                            cántabro, que resistió la ocupación romana entre los años 29 y 19 a. C., así como con su propio linaje.</note> 
+                            </persName></l>
+                        <l n="6">Que le asegura el triunfo milagroso.</l>
+                    </lg>
+                    <lg n="4" type="pareado">
+                        <l n="7">Rompe la Cruz los fuertes 
+                            <choice><orig>Esquadrones</orig><reg>Escuadrones</reg></choice>;</l>
+                        <l n="8" real="12">Arrojan armas, arrastran los pendones:</l>
+                    </lg>
+                    <lg n="5" type="pareado">
+                        <l n="9">De 
+                            <placeName>Toledo</placeName> la Augusta poderosa</l>
+                        <l n="10">Es 
+                            <persName type="bibl" key="DEB">
+                            <choice><orig>Dèvora</orig><reg>Débora</reg></choice>
+                            <note type="editor" resp="IC">Profestisa y Juez de Israel. Dirigió junto a Barak la guerra contra los cananeos. Su historia se 
+                            cuenta en los capítulos IV y V del «Libro de los jueces», en en el Antiguo Testamento. Personaje favorito de Helguero, aparece 
+                            también en «Las Heroínas...» y en la «Loa» a santa Teresa</note></persName> en 
+                            <placeName>las Navas de Tolosa
+                            <note type="editor" resp="IC">Batalla que enfrentó el 16 de julio de 1212 a la alianza de los reinos cristianos peninsulares 
+                            contra el ejército almohade cerca de Santa Elena (Jaén, Andalucía). De acuerdo a la historiografía clásica, fue el punto 
+                            culminante de la Reconquista.</note></placeName>.</l>
+                    </lg>
+                    <lg n="6" type="pareado">
+                        <l n="11">Vence el 
+                            <persName type="hist" key="A8">Monarca</persName> haciendo maravillas;</l>
+                        <l n="12" real="12">Liberta 
+                            <choice><orig>à</orig><reg>a</reg></choice> <placeName>Europa</placeName>, no solo 
+                            <choice><orig>à</orig><reg>a</reg></choice> las <placeName>Castillas</placeName>.</l>
+                        </lg>
+                    <lg n="7" type="pareado">
+                        <l n="13">Pues resuene en el campo el «¡viva, viva!»,</l>
+                        <l n="14">De laurel se corone y verde oliva:</l>
+                        </lg>
+                    <lg n="8" type="pareado">
+                        <l n="15">
+                            <choice><orig>Mas</orig><reg>Más</reg></choice> valiente 
+                            <choice><orig>Escipion</orig><reg>Escipión</reg></choice> que 
+                            <choice><orig>allà</orig><reg>allá</reg></choice> el 
+                            <persName type="hist" key="ESCI">Romano</persName>,</l>
+                        <l n="16">El renombre merece de Africano.</l>
+                    </lg>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
