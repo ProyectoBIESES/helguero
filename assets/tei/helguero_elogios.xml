@@ -82,8 +82,8 @@
         </fileDesc>
         <encodingDesc>
             <projectDesc>
-                <p>Esta edición y las asociadas a ella integran <ref target="https://icanogar.gitlab.io/nicolasa/">una publicación 
-                digital en GitLab</ref> que recoge la producción literaria de Nicolasa de Helguero
+                <p>Esta edición y las asociadas a ella integran <ref target="https://proyectobieses.github.io/helguero/">una publicación 
+                digital en GitHub</ref> que recoge la producción literaria de Nicolasa de Helguero
                 y Alvarado, además de referencia sobre la autora y su contexto de producción.</p>
                 <!--cambiar la URL si se crea una cuenta para BIESES-->
             </projectDesc>
@@ -93,7 +93,7 @@
             <editorialDecl>
                 <normalization>
                     <p>La codificación refleja las variantes ortográficas originales y su regularización, de acuerdo a 
-                    los criterios explicitados en <ref target="https://icanogar.gitlab.io/nicolasa/criterios"/> 
+                    los criterios explicitados en <ref target="https://proyectobieses.github.io/helguero/criterios"/> 
                     y a los criterios editoriales generales del Proyecto Bieses 
                     <ptr target="https://www.bieses.net/wp-content/uploads/2014/12/criterios_edici%c3%b3n.pdf"/>. 
                     Se mantienen las mayúsculas originales del texto, así como los usos sintácticos (leísmo, laísmo) que pueden corresponder tanto al estado 
